@@ -29,7 +29,8 @@
 body {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: var(--grey-100);
 }
 
@@ -38,6 +39,7 @@ main {
     grid-template-columns: 19.0625rem;
     grid-gap: var(--spacing-400);
     justify-content: center;
+    align-content: center;
 }
 
 .review-card {
@@ -149,7 +151,7 @@ blockquote > p {
 @media (min-width: 1440px) {
     main {
         grid-template-columns: repeat(4, 15.9375rem);
-        grid-template-rows: auto;
+        grid-template-rows: repeat(2, 16.8125rem);
     }
 
     .purple {
